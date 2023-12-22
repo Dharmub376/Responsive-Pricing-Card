@@ -1,0 +1,104 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #86f, #5cf);
+}
+
+.pricing-cards-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  width: 40%;
+}
+
+.pricing-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.pricing-header {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px ;
+}
+
+.pricing-header h2 {
+  margin: 0;
+}
+
+.price {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.bx-check-double{
+  color: blue;
+}
+.bx-x{
+  color: red;
+}
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin: 10px 0;
+}
+
+.btn {
+  background: rgba(75, 218, 110, 0.8);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: rgba(75, 218, 110, 1);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .pricing-cards-container {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .pricing-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Medium screens (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .pricing-cards-container {
+    width: 60%;
+  }
+}
+
+/* Large screens (min-width: 992px) */
+@media (min-width: 992px) {
+  /* No specific styles for large screens */
+}
